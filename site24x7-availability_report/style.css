@@ -1,0 +1,200 @@
+/* ==========================================================================
+   BASE STRUCTURE
+   ========================================================================== */
+
+/* Base Structure
+   ========================================================================== */
+html {
+  line-height: 1.5;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #1C1F24;
+  text-rendering: optimizeLegibility;
+}
+body {
+  margin: 0;
+  padding: 0px;
+}
+.clearfix { clear: both; }
+img { border: 0px; }
+* { box-sizing: inherit; }
+
+/* Text Formatting
+  ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+  text-transofrm: uppercase;
+  color: #23272D;
+}
+h1, h2 { font-weight: 400, line-height: 1.1; }
+h1 {
+  font-size: 3.5em;
+  margin: 0.67em 0px;
+}
+header h1 {
+  margin-top: .5em;
+  padding-top: 0;
+  color: #4A5263;
+  text-align: center;
+  letter-spacing: .1em;
+}
+.group h2 {
+  font-size: 2.1em;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5)
+p {
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+#quickstats {
+  font-size: 1.1rem;
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+}  
+strong { font-weight: bold; }
+
+
+/* Logo
+   ========================================================================== */
+header img {
+  float: left;
+  width: 100px; /* <-- Adjust as needed */
+  height: 33px; /* <-- Adjust as needed */
+  margin-left: 10px;
+}
+
+/* ==========================================================================
+   SKILLS BAR
+   ========================================================================== */
+
+skillbar {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 12px;
+  align-items: center;
+  min-width: 0;
+  magin-bottom: 15px;
+  width: 100%;
+  min-height: 2.45em;
+  height: auto;
+  padding: .7em 1em .35em;
+  overflow: hidden;
+  background-color: rgba(255,255,255,0.1)
+  border-radius: 3px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+  transition: 0.4s linear;
+      -webkit-transiztion: 0.4s linear;
+      -moz-transition: 0.4s linear;
+      -ms-transition: 0.4s linear;
+      -o-transition: 0.4s linear;
+  transition-property: width, background-color;
+      -webkit-transition-property: width, background-color;
+      -moz-transition-property: width, background-color;
+      -ms-transition-property: width, background-color;
+      -o-transition-property: width, background-color;
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  -wbkit--box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+.skillbar-title {
+  position: absolute;
+  left: auto;
+  right: auto;
+  top: auto;
+  min-width: 0;
+  font-size: 1em;
+  line-height: 1.2;
+  border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.skillbar-title span {
+  display: block;
+  padding: 0;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.skillbar-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: auto;
+  height: .26em;
+  width: 0px;
+  max-width: 100%;
+  border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.skill-bar-percent {
+  position: relative;
+  right: auto;
+  top: auto;
+  width: auto;
+  min-width: 6.2em;
+  white-space: no-wrap;
+  text-align: right;
+  font-size: 1.2;
+  padding: 0;
+  border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+/* ==========================================================================
+   LAYOUT
+   ========================================================================== */
+.dash-container {
+  display: flex;
+  flex-flow: wrap;
+}
+.main-column {
+  display: flex;
+  flex-grow: 1;
+  min-width: 310px;
+}
+.group {
+  flex-grow: 1;
+  width: 100%;
+  padding: 10px;
+  border-style: solid;
+  border-color: #96B4C8;
+}
+
+/* ==========================================================================
+   BACKGROUNDS
+   ========================================================================== */
+.critical { background-color: #bf616a; }
+.warning { background-color: #ebcb8b; }
+.normal { background-color: #a3be8c; }
+.average { background-color: #d8dee9; }
+
+.tresh {
+  border-radius: 6px;
+  padding: 4px 8px 4px 4px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #EAEEF3;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* ==========================================================================
+   MOBILE
+   ========================================================================== */
+@media only screen and (min-device-width: 320px) and (max-device-width:480px) {
+  html { font-size: 35px; }
+  .dash-container { display: inline; }
+  .group h2 { font-size: 1.6em; }
+  h1 { font-size: 1.6em; }
+}
+
+
+
