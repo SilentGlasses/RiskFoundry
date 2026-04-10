@@ -1,0 +1,20 @@
+{
+  "groups": [
+    {
+      "name: "Monitor Group Name",
+      "monitor_ids": [
+        "1234567890",
+        "1234567890",
+        "1234567890"
+      ]
+    },
+    {
+      "name: "Monitor Group Name",
+      "monitor_ids": [
+        "1234567890",
+        "1234567890",
+        "1234567890"
+      ]
+    }
+  ]
+}
